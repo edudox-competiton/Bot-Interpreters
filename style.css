@@ -121,7 +121,11 @@ nav{
     color: lightseagreen;
     font-weight: 600;
   }
-
+  
+  .logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
   
   .two-column-wrapper {
     display: grid;
