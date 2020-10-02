@@ -4,7 +4,8 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	background-color: #eeeeee;
+    background-color: #eeeeee;
+    font-family: "Lato", sans-serif;
 }
 .container {
     display: grid;
@@ -120,11 +121,7 @@ nav{
     color: lightseagreen;
     font-weight: 600;
   }
-  
-  .logo-wrapper img {
-    width: 50%;
-    margin-bottom: 20px;
-  }
+
   
   .two-column-wrapper {
     display: grid;
