@@ -73,7 +73,7 @@ nav{
 }
 
 .newsfeed {
-	padding: 0 20px;
+	padding: 10px 20px 10px 20px;;
   }
   
   .card-container {
@@ -100,21 +100,21 @@ nav{
     background-image: url('Images/bowling.jpg');
   }
   .card2 .picture{
-    background-image: url('Images/bowling.jpg');
+    background-image: url('Images/cricket.jpg');
   }.card3 .picture{
-    background-image: url('Images/bowling.jpg');
+    background-image: url('Images/shooting.jpeg');
   }.card4 .picture{
-    background-image: url('Images/bowling.jpg');
+    background-image: url('Images/dance.jpeg');
   }.card5 .picture{
-    background-image: url('Images/bowling.jpg');
+    background-image: url('Images/car.jpeg');
   }.card6 .picture{
-    background-image: url('Images/bowling.jpg');
+    background-image: url('Images/bike.jpg');
   }.card7 .picture{
-    background-image: url('Images/bowling.jpg');
+    background-image: url('Images/Airhockey.jpg');
   }.card8 .picture{
-    background-image: url('Images/bowling.jpg');
+    background-image: url('Images/Dashingcar.jpg');
   }.card9 .picture{
-    background-image: url('Images/bowling.jpg');
+    background-image: url('Images/vending.jpg');
   }.card10 .picture{
     background-image: url('Images/bowling.jpg');
   }
@@ -173,8 +173,9 @@ nav{
 	flex: 1;
   }
 
-  .card-container .footer .cart{
-	  flex: 0 0 10%;
+  .card-container .footer .cart .button{
+	  background-color: #242C39;
+	  flex: 0 0 21%;
   }
   
   .card-container .footer i {
