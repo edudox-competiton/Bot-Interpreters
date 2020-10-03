@@ -41,40 +41,40 @@
       z-index: 10;
   }
   nav{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 2px;
-      font-family: times new roman;
-      /* position: fixed;
-      top: 0;
-      left: 0; */
-      width: 100%;
-      box-sizing: border-box;
-      padding: 0px 10px 0px 10px;
-      background-color: #f4f7ff;
-      box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
-      z-index:99;
-  }
-  .menu{
-      display: flex;
-  }
-  .menu li a{
-      padding: 10px 15px;
-      color: #6c707c;
-      font-size: 12px;
-  }
-  .lang{
-      color: #292929;
-  }
-  .logo{
-      font-size: 25px;
-      font-weight: bold;
-      color: #292929;
-      font-family: trebuchet ms;
-  }
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: times new roman;
+	/* position: fixed;
+	top: 0;
+	left: 0; */
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0px 10px 0px 10px;
+	background-color: #050606;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
+	z-index:99;
+}
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color: #eee;
+	font-size: 12px;
+}
+.lang{
+	color: #eeeeee;
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color: #eee;
+	font-family: trebuchet ms;
+}
   #pic{
      padding-top: 80px;
     height: 90vh;
@@ -243,5 +243,6 @@
 }
 /* contact */
 
-  
-  
+
+/* Responsive*/
+
