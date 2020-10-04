@@ -7,64 +7,91 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="styloesheet" href="./style.css" type="text/css" />
-
-
-    <title>Invoice</title>
+    <link rel="styloesheet" href="cart.css" type="text/css" />
+   
+    <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container" style="width: 600px">
-      <div class="panel panel-default">
-        <div class="panel-heading text-center mt-4">
-          <h4>Review Order</h4>
-          <hr class="w-25 ml-auto" />
-        </div>
-        <div class="panel-body mt-4">
-          <div class="col-md-12">
-            <strong>Product name</strong>
-            <div class="pull-right" style="float: right">
-              <span>$</span>
-              <span id="name"></span>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <strong>Subtotal (# item)</strong>
-            <div class="pull-right" style="float: right">
-              <span>$</span>
-              <span id="subtotal"></span>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <strong>Tax</strong>
-            <div class="pull-right" style="float: right">
-              <span>$</span>
-              <span>15.00</span>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <small>Shipping</small>
-            <div class="pull-right" style="float: right">
-              <span>-</span>
-            </div>
-            <hr />
-          </div>
-          <div class="col-md-12">
-            <strong>Order Total</strong>
-            <div class="pull-right" style="float: right">
-              <span>$</span>
-              <span>
-                <strong id="total"></strong>
-              </span>
-            </div>
-            <hr />
-          </div>
-
-          <div class="text-center">
-            <div id="buy" class="btn btn-warning">Buy Now</div>
-          </div>
-        </div>
-      </div>
+    <h1 class="bg-dark text-white text-center">Hello mic Check</h1>
+      <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+    		<div class="invoice-title">
+    			<h2>Invoice</h2><h3 class="pull-right">Order # 12345</h3>
+    		</div>
+    		<hr>
+    		<div class="row">
+    			<div class="col-md-6">
+    				<address>
+    				<strong>Billed To:</strong><br>
+    					John Smith<br>
+    					1234 Main<br>
+    					Apt. 4B<br>
+    					Springfield, ST 54321
+    				</address>
+    			</div>
+    			<div class="col-md-6 text-right">
+    				<address>
+        			<strong>Shipped To:</strong><br>
+    					Jane Smith<br>
+    					1234 Main<br>
+    					Apt. 4B<br>
+    					Springfield, ST 54321
+    				</address>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-6">
+    				<address>
+    					<strong>Payment Method:</strong><br>
+    					Visa ending **** 4242<br>
+    					jsmith@email.com
+    				</address>
+    			</div>
+    			<div class="col-md-6 text-right">
+    				<address>
+    					<strong>Order Date:</strong><br>
+    					March 7, 2014<br><br>
+    				</address>
+    			</div>
+    		</div>
+    	</div>
     </div>
-    <script src="./app.js" type="text/javascript"></script>
+    
+    <div class="row">
+    	<div class="col-md-12">
+    		<div class="panel panel-default">
+    			<div class="panel-heading">
+    				<h3 class="panel-title"><strong>Order summary</strong></h3>
+    			</div>
+    			<div class="panel-body">
+    				<div class="table-responsive">
+    					<table class="table table-condensed">
+    						<thead>
+                                <tr>
+        							<td><strong>Item</strong></td>
+        							<td class="text-center"><strong>Price</strong></td>
+        							<td class="text-center"><strong>Quantity</strong></td>
+        							<td class="text-right"><strong>Totals</strong></td>
+                                </tr>
+    						</thead>
+    						<tbody id="content-body">
+    							<!-- foreach ($order->lineItems as $line) or some such thing here -->
+    						</tbody>
+              </table>
+            </div>
+            <div class="container">
+              <label>Subtotal</label>
+              <p id="subtotal"></p>
+              <label>Tax</label>
+              <p id="tax">15</p>
+              <label>Total</label>
+              <p id="total"></p>
+            </div>            
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <script src="cart.js" type="text/javascript"></script>
   </body>
 </html>
