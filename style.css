@@ -188,7 +188,7 @@ nav{
   }
 
 	   /* Resposnive*/
-	   @media screen and (max-width: 1400px)
+	   @media screen and (min-width: 1400px)
 	   {
 		 .newsfeed{
 			 display: flex;
@@ -201,7 +201,7 @@ nav{
 		 }		  
 	   }
  
-	   @media screen and (max-width:900px) 
+	   @media screen and (min-width:900px) 
 	   {
 		 .newsfeed{
 			 display: flex;
