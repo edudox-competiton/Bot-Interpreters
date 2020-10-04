@@ -6,6 +6,7 @@
     
     <link rel="stylesheet" type="text/css" href="style.css"> 
     <script type="javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -24,9 +25,14 @@
                     <li> <a href="#enjoy"><img src="https://img.icons8.com/cotton/64/000000/party-baloons.png" height="25px">Enjoy</a> </li>
                 </ul>
                 <!-- language ---->
-                <a href="#" class="lang">En</a>
+                <div class="">
+                  <a href="#" class="lang">En</a>
+                  <a href="./cart.html" style="color: white"><i class="fas fa-shopping-cart"></i></a>
+                </div>
             </nav>
-
+            <section class="search">
+              <input type="text" onchange="search(this.value)" onkeydown="search(this.value)" onkeyup="search(this.value)" class="search-bar" placeholder="🔍 Wanna search any game?">
+            </section>
             <section class="newsfeed">
               <div class="card1 card-container">
                 <div class="picture"></div>
@@ -58,7 +64,7 @@
                     </div>
                     <div class="cart">
                       <i class="fas fa-share"></i>
-                      <span>Add to cart:<button class="btn-danger"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
+                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('BOWLING', 100)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
                     </div>
                   </div>
                 </div>
@@ -96,7 +102,7 @@
                     </div>
                     <div class="cart">
                       <i class="fas fa-share"></i>
-                      <span>Add to cart:<button class="btn-danger"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
+                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('CRICKET',200)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
                     </div>
                   </div>
                 </div>
@@ -133,7 +139,7 @@
                     </div>
                     <div class="cart">
                       <i class="fas fa-share"></i>
-                      <span>Add to cart:<button class="btn-danger"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
+                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('SHOOTING',100)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
                     </div>
                   </div>
                 </div>
@@ -170,7 +176,7 @@
                     </div>
                     <div class="cart">
                       <i class="fas fa-share"></i>
-                      <span>Add to cart:<button class="btn-danger"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
+                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('DANCE',30)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
                     </div>
                   </div>
                 </div>
@@ -207,7 +213,7 @@
                     </div>
                     <div class="cart">
                       <i class="fas fa-share"></i>
-                      <span>Add to cart:<button class="btn-danger"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
+                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('CAR RACING', 50)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
                     </div>
                   </div>
                 </div>
@@ -244,7 +250,7 @@
                     </div>
                     <div class="cart">
                       <i class="fas fa-share"></i>
-                      <span>Add to cart:<button class="btn-danger"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
+                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('BIKE RACING', 50)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
                     </div>
                   </div>
                 </div>
@@ -281,7 +287,7 @@
                     </div>
                     <div class="cart">
                       <i class="fas fa-share"></i>
-                      <span>Add to cart:<button class="btn-danger"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
+                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('AIR HOCKEY', 40)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
                     </div>
                   </div>
                 </div>
@@ -318,7 +324,7 @@
                     </div>
                     <div class="cart">
                       <i class="fas fa-share"></i>
-                      <span>Add to cart:<button class="btn-danger"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
+                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('DASHING CARS', 60)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
                     </div>
                   </div>
                 </div>
@@ -355,7 +361,7 @@
                     </div>
                     <div class="cart">
                       <i class="fas fa-share"></i>
-                      <span>Add to cart:<button class="btn-danger"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
+                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('VENDING', 10)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
                     </div>
                   </div>
                 </div>
@@ -392,7 +398,7 @@
                     </div>
                     <div class="cart">
                       <i class="fas fa-share"></i>
-                      <span>Add to cart:<button class="btn-danger"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
+                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('BASKETBALL', 40)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
                     </div>
                   </div>
                 </div>
@@ -401,5 +407,46 @@
 
             </section>
     </div>
+    <script>
+      function search(keyword){
+        // hide all card-containers
+        keyword = keyword.toLowerCase();
+        cards = document.querySelectorAll('.card-container');
+        i = 0;
+        cards.forEach(card => {
+          if(document.querySelectorAll('.name')[i].innerHTML.toLowerCase().includes(keyword))
+          {
+            card.style.display = "block";
+          }
+          else{
+            card.style.display = "none";
+          }
+          i++;
+        });
+        // show only once matching the keyword
+      }
+
+      function add_to_cart(name, price){
+        let list = JSON.parse(localStorage.getItem('cart')) || [];
+        let val = {"name":name, "price":price}
+        // if()
+        flag = 0;
+        for(i = 0; i< list.length; i++)
+        {
+          if(list[i].name == name)
+          {
+            flag = 1;
+            break;
+          }
+        }
+        if(flag == 0)
+        {
+          // this will eliminate duplicate entry
+          list.push(val);
+        }
+        localStorage.setItem('cart', JSON.stringify(list));
+        console.log(JSON.parse(localStorage.getItem('cart')));
+      }
+    </script>
 </body>
 </html>
