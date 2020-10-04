@@ -7,21 +7,21 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="styloesheet" href="cart.css" type="text/css" />
-   
+    <link rel="stylesheet" href="cart.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1 class="bg-dark text-white text-center">Hello mic Check</h1>
+    <h1 class="start">CART</h1>
       <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="inv">
     		<div class="invoice-title">
-    			<h2>Invoice</h2><h3 class="pull-right">Order # 12345</h3>
+    			<h2>Invoice</h2><br><h3 class="pull-right">Order # 12345</h3>
     		</div>
     		<hr>
-    		<div class="row">
-    			<div class="col-md-6">
+    		<div class="row row1">
+    			<div class="bill">
     				<address>
     				<strong>Billed To:</strong><br>
     					John Smith<br>
@@ -30,7 +30,7 @@
     					Springfield, ST 54321
     				</address>
     			</div>
-    			<div class="col-md-6 text-right">
+    			<div class="ship">
     				<address>
         			<strong>Shipped To:</strong><br>
     					Jane Smith<br>
@@ -40,15 +40,15 @@
     				</address>
     			</div>
     		</div>
-    		<div class="row">
-    			<div class="col-md-6">
+    		<div class="row row2">
+    			<div class="pay">
     				<address>
     					<strong>Payment Method:</strong><br>
     					Visa ending **** 4242<br>
     					jsmith@email.com
     				</address>
     			</div>
-    			<div class="col-md-6 text-right">
+    			<div class="date">
     				<address>
     					<strong>Order Date:</strong><br>
     					March 7, 2014<br><br>
@@ -59,20 +59,20 @@
     </div>
     
     <div class="row">
-    	<div class="col-md-12">
-    		<div class="panel panel-default">
+    	<div class="col">
+    		<div class="panel">
     			<div class="panel-heading">
-    				<h3 class="panel-title"><strong>Order summary</strong></h3>
+    				<h3 class="panel-title"><strong>Order summary</strong></h3><hr>
     			</div>
     			<div class="panel-body">
     				<div class="table-responsive">
-    					<table class="table table-condensed">
+    					<table class="table ">
     						<thead>
                                 <tr>
         							<td><strong>Item</strong></td>
         							<td class="text-center"><strong>Price</strong></td>
         							<td class="text-center"><strong>Quantity</strong></td>
-        							<td class="text-right"><strong>Totals</strong></td>
+        							<td class="text-right"><strong>Total</strong></td>
                                 </tr>
     						</thead>
     						<tbody id="content-body">
@@ -80,12 +80,12 @@
     						</tbody>
               </table>
             </div>
-            <div class="container">
-              <label>Subtotal</label>
+            <div class="container cont2">
+              <label>Subtotal:</label>
               <p id="subtotal"></p>
-              <label>Tax</label>
+              <label>Tax:</label>
               <p id="tax">15</p>
-              <label>Total</label>
+              <label>Total:</label>
               <p id="total"></p>
             </div>            
     			</div>
