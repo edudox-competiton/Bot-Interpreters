@@ -193,29 +193,29 @@ nav{
   }
   
 
-	   /* Resposnive*/
-	   @media screen and (min-width: 1400px)
-	   {
-		 .newsfeed{
-			 display: flex;
-			 justify-content: space-evenly;
-			 flex-flow: row;
-			 flex-wrap: wrap;
-		 }
-		 .card-container{
-			 width: 40%;
-		 }		  
-	   }
- 
-	   @media screen and (min-width:900px) 
-	   {
-		 .newsfeed{
-			 display: flex;
-			 justify-content: space-evenly;
-			 flex-flow: row;
-			 flex-wrap: wrap;
-		 }
-		 .card-container{
-			 width: 80%;
-		 }		  
-	   }
+	     /* Resposnive*/
+	  @media screen and (max-width: 1280px)
+	  {
+		.newsfeed{
+			display: flex;
+			justify-content: space-evenly;
+			flex-flow: row;
+			flex-wrap: wrap;
+		}
+		.card-container{
+			width: 40%;
+		}		  
+	  }
+
+	  @media screen and (max-width:900px) 
+	  {
+		.newsfeed{
+			display: flex;
+			justify-content: space-evenly;
+			flex-flow: row;
+			flex-wrap: wrap;
+		}
+		.card-container{
+			width: 80%;
+		}		  
+	  }
