@@ -25,6 +25,7 @@
   }
   a{
       text-decoration: none;
+      color: white;
   }
   .toggle{
       display: none;
@@ -35,6 +36,7 @@
       box-sizing: border-box;
       background-color: #edf1fd;
       background: url("blur.jpg");
+      
       position: relative;
       /* background-image: url("profile.JPG"); */
       background-repeat: no-repeat;
@@ -50,13 +52,14 @@
       font-weight: 600;
       letter-spacing: 2px;
       font-family: times new roman;
+      background-color: #050606;
       /* position: fixed;
       top: 0;
       left: 0; */
       width: 100vw;
       box-sizing: border-box;
       padding: 0px 20px 0px 20px;
-      background-color: #f4f7ff;
+      color: #eee;
       box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
       z-index:99;
   }
@@ -66,19 +69,19 @@
       align-items: center;
   }
   .menu li a{
-      /* padding: 10px 15px; */
-      color: #6c707c;
+      padding: 10px 15px;
+      
       font-size: 12px;
       
   }
  
   .lang{
-      color: #292929;
+    color: #eee;
   }
   .logo{
       font-size: 25px;
       font-weight: bold;
-      color: #292929;
+      
       font-family: trebuchet ms;
   }
   #pic{
