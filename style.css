@@ -173,8 +173,8 @@ nav{
 	flex: 1;
   }
 
-  .card-container .footer .cart .button{
-	  color: #242C39;
+  .card-container .footer .cart {
+	  /* color: #242C39; */
 	  flex: 0 0 21%;
   }
   
@@ -186,6 +186,12 @@ nav{
     align-items: center;
     /* padding-right: 2px; */
   }
+  .btn-danger{
+	  background-color: transparent;
+	  border: none;
+	  cursor: pointer;
+  }
+  
 
 	   /* Resposnive*/
 	   @media screen and (min-width: 1400px)
