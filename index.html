@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" type="text/css" href="style.css"> 
-    <script type="javascript" src="script.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Game Zone</title>
+    <link rel="stylesheet" href="landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
@@ -15,7 +14,7 @@
             <!-- navigation ---->
             <nav>
                 <!--logo------->
-                <a href="landing.html" class="logo"> LOGO </a>
+                <a href="index.html" class="logo"> GameZone </a>
                 <!--bar icon-->
                 <div class="toggle"></div>
                 <!--menu---->
@@ -26,381 +25,106 @@
                 </ul>
                 <!-- language ---->
                 <div class="">
+                  <!-- <a href="#" class="lang">En</a> -->
                   <a href="cart.html" style="color: white"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </nav>
-            <section class="search">
-              <input type="text" onchange="search(this.value)" onkeydown="search(this.value)" onkeyup="search(this.value)" class="search-bar" placeholder="🔍 Wanna search any game?">
-            </section>
-            <section class="newsfeed">
-              <div class="card1 card-container">
-                <div class="picture"></div>
-                <div class="content">
-                  <div class="header">
-                    <div class="detail">
-                      <p class="name">BOWLING</p>
+        </section>
+        <section id="pic">
+            <h1>ONE VENUE</h1>
+            <h1>COUNTLESS</h1>
+            <h1>POSSIBILITIES</h1>
+            <div class="btn"><button><a href="games.html">BOOK NOW</a></button></div>
+        </section>
+        <section id="home">
+            <div class="offers">
+                               
+                <div class="info">
+                    <div class="info-left">
+                        <img src="Images/o.jpg" alt="">
                     </div>
-                  </div>
-                  <div class="desc">
-                    Bowling is a target sport and recreational activity in which a player rolls a ball toward pins                  </div>
-                  <div class="tags">
-                    <span>#kids</span>
-                    <span>#adult</span>
-                  </div>
-                  <div class="footer">
-                    <div class="price">
-                      
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/money.png" height="25">Cost : $100/-</span>
+                    <div class="info-right">
+                        <h3>Exclusive Offers</h3>
+                        <p>Make your child's next birthday the best one yet! We’re offering 
+                            exclusive promotions on birthday packages for Kids and Teens. </p>
                     </div>
-                    <div class="Player">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/volleyball-2.png" height="25">Min Player : 4</span>
-                    </div>
-                    <div class="like">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/like.png" height="25">100</span>
-                    </div>
-                    <div class="cart">
-                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('BOWLING', 100)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
-                    </div>
-                  </div>
                 </div>
-              </div>
-
-              <div class="card2 card-container">
-                <div class="picture"></div>
-                <div class="content">
-                  <div class="header">
+            </div>
+            <div class="offers">
+                               
+                <div class="info info2">
+                    <div class="info-right">
+                        <h3>Play & Win</h3>
+                        <p>Play and compete for a chance to win real money, top-notch prizes and exclusive discounts.</p>
+                    </div>
+                    <div class="info-left">
+                        <img src="Images/o2.jpg" alt="">
+                    </div>
                     
-                    <div class="detail">
-                      <p class="name">CRICKET</p>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    Introducing the best and economical cricket simulator compatible with the instant replay and Game Analytic                  </div>
-                  <div class="tags">
-                    <span>#kids</span>
-                    <span>#adult</span>
-                  </div>
-                  <div class="footer">
-                    <div class="price">
-                      
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/money.png" height="25">Cost : $200/-</span>
-                    </div>
-                    <div class="Player">
-                     
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/volleyball-2.png" height="25">Min Player : 1</span>
-                    </div>
-                    <div class="like">
-                      
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/like.png" height="25">100</span>
-                    </div>
-                    <div class="cart">
-                      
-                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('CRICKET',200)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
-                    </div>
-                  </div>
                 </div>
-              </div>
-
-              <div class="card3 card-container">
-                <div class="picture"></div>
-                <div class="content">
-                  <div class="header">
-                   
-                    <div class="detail">
-                      <p class="name">SHOOTING</p>
+            </div>
+            
+        </section>
+        <h2 class="par">PARTIES & EVENTS</h2>
+        <section id="parties">
+            
+            <div class="party-cont one">
+                
+                <div class="actual-party">
+                    <div class="inner-div">
+                        <h2>LEAGUES & SOCIAL CLUBS</h2>
+                        <p>Team up. Have a great time. Our leagues and social clubs 
+                            offer lively competition and laid-back fun for everyone from beginners to pros.
+                             Hang out with your BFFs, improve your game, and get awesome 
+                             perks—all in a social club or league.
+                        </p>
                     </div>
-                  </div>
-                  <div class="desc">
-                    Since its establishment in 1999, Laser Shot has remained committed to developing the most realistic and practical firearm simulators,                   </div>
-                  <div class="tags">
-                    <span>#kids</span>
-                    <span>#adult</span>
-                  </div>
-                  <div class="footer">
-                    <div class="price">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/money.png" height="25">Cost : $100/-</span>
-                    </div>
-                    <div class="Player">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/volleyball-2.png" height="25">Min Player : 3</span>
-                    </div>
-                    <div class="like">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/like.png" height="25">100</span>
-                    </div>
-                    <div class="cart">
-                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('SHOOTING',100)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
-                    </div>
-                  </div>
                 </div>
-              </div>
-
-              <div class="card4 card-container">
-                <div class="picture"></div>
-                <div class="content">
-                  <div class="header">
-                    
-                    <div class="detail">
-                      <p class="name">DANCE</p>
+                
+            </div>
+            <div class="party-cont pcont2">
+                
+                <div class="actual-party">
+                    <div class="inner-div">
+                        <h2>WEEKLY SPECIALS</h2>
+                        <p>Score a sweet deal every day of the week! Contact us for all of our weekly specials and save big on epic fun.
+                        </p>
                     </div>
-                  </div>
-                  <div class="desc">
-                    The virtual simulation technology shows the necessity of dance choreographer practice, it plays a key role in conversion process                  </div>
-                  <div class="tags">
-                    <span>#kids</span>
-                    <span>#adult</span>
-                  </div>
-                  <div class="footer">
-                    <div class="price">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/money.png" height="25">Cost : $30/-</span>
-                    </div>
-                    <div class="Player">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/volleyball-2.png" height="25">Min Player : 2</span>
-                    </div>
-                    <div class="like">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/like.png" height="25">100</span>
-                    </div>
-                    <div class="cart">
-                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('DANCE',30)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
-                    </div>
-                  </div>
                 </div>
-              </div>
-
-              <div class="card5 card-container">
-                <div class="picture"></div>
-                <div class="content">
-                  <div class="header">
-                    
-                    <div class="detail">
-                      <p class="name">CAR RACING</p>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    Take to the track and test your racing skills in the fantastic Car Race Simulator. Before driving your car                  </div>
-                  <div class="tags">
-                    <span>#kids</span>
-                    <span>#adult</span>
-                  </div>
-                  <div class="footer">
-                    <div class="price">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/money.png" height="25">Cost : $50/-</span>
-                    </div>
-                    <div class="Player">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/volleyball-2.png" height="25">Min Player : 4</span>
-                    </div>
-                    <div class="like">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/like.png" height="25">100</span>
-                    </div>
-                    <div class="cart">
-                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('CAR RACING', 50)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card6 card-container">
-                <div class="picture"></div>
-                <div class="content">
-                  <div class="header">
-                    
-                    <div class="detail">
-                      <p class="name">BIKE RACING</p>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    Take to the track and test your racing skills in the fantastic Bike Race Simulator. Before mounting your bike                  </div>
-                  <div class="tags">
-                    <span>#kids</span>
-                    <span>#adult</span>
-                  </div>
-                  <div class="footer">
-                    <div class="price">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/money.png" height="25">Cost : $50/-</span>
-                    </div>
-                    <div class="Player">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/volleyball-2.png" height="25">Min Player : 4</span>
-                    </div>
-                    <div class="like">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/like.png" height="25">100</span>
-                    </div>
-                    <div class="cart">
-                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('BIKE RACING', 50)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card7 card-container">
-                <div class="picture"></div>
-                <div class="content">
-                  <div class="header">
-                    
-                    <div class="detail">
-                      <p class="name">AIR HOCKEY</p>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    Air hockey is a game where two players play against each other on a low-friction table. Air hockey requires an air-hockey table, two player-held strikers, and a puck.                  </div>
-                  <div class="tags">
-                    <span>#kids</span>
-                    <span>#adult</span>
-                  </div>
-                  <div class="footer">
-                    <div class="price">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/money.png" height="25">Cost : $40/-</span>
-                    </div>
-                    <div class="Player">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/volleyball-2.png" height="25">Min Player : 2</span>
-                    </div>
-                    <div class="like">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/like.png" height="25">100</span>
-                    </div>
-                    <div class="cart">
-                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('AIR HOCKEY', 40)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card8 card-container">
-                <div class="picture"></div>
-                <div class="content">
-                  <div class="header">
-                    
-                    <div class="detail">
-                      <p class="name">DASHING CARS</p>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    Bumper cars or dodgems is the generic name for a type of flat ride consisting of several small electrically powered cars which draw power from the floor and/or ceiling, and which are turned on and off remotely by an operator.                  </div>
-                  <div class="tags">
-                    <span>#kids</span>
-                    <span>#adult</span>
-                  </div>
-                  <div class="footer">
-                    <div class="price">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/money.png" height="25">Cost : $60/-</span>
-                    </div>
-                    <div class="Player">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/volleyball-2.png" height="25">Min Player : 5</span>
-                    </div>
-                    <div class="like">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/like.png" height="25">100</span>
-                    </div>
-                    <div class="cart">
-                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('DASHING CARS', 60)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card9 card-container">
-                <div class="picture"></div>
-                <div class="content">
-                  <div class="header">
-                    
-                    <div class="detail">
-                      <p class="name">VENDING</p>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    24buy7 is the provider of Vending Machines focused on facilitating value-added services. Let us know what products you’re looking for, and we’ll be happy to supply them to you.
-                  </div>
-                  <div class="tags">
-                    <span>#kids</span>
-                    <span>#adult</span>
-                  </div>
-                  <div class="footer">
-                    <div class="price">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/money.png" height="25">Cost : $10/-</span>
-                    </div>
-                    <div class="Player">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/volleyball-2.png" height="25">Min Player : 4</span>
-                    </div>
-                    <div class="like">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/like.png" height="25">100</span>
-                    </div>
-                    <div class="cart">
-                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('VENDING', 10)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card10 card-container">
-                <div class="picture"></div>
-                <div class="content">
-                  <div class="header">
-                    
-                    <div class="detail">
-                      <p class="name">BASKETBALL</p>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    Basketball, colloquially referred to as hoops, is a team sport in which two teams                  </div>
-                  <div class="tags">
-                    <span>#kids</span>
-                    <span>#adult</span>
-                  </div>
-                  <div class="footer">
-                    <div class="price">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/money.png" height="25">Cost : $40/-</span>
-                    </div>
-                    <div class="Player">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/volleyball-2.png" height="25">Min Player : 2</span>
-                    </div>
-                    <div class="like">
-                      <span><img src="https://img.icons8.com/bubbles/50/000000/like.png" height="25">100</span>
-                    </div>
-                    <div class="cart">
-                      <span>Add to cart:<button class="btn-danger" onclick="add_to_cart('BASKETBALL', 40)"><img src="https://img.icons8.com/clouds/100/000000/favorite-cart.png" height="30"></button></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </section>
+                
+            </div>
+            
+        </section>
+       <section id="end">
+           <div class="l-title">
+                <h2>Location & Hours</h2>
+           </div>
+           <div class="desc">
+               <p>Pheonix Marketcity</p>
+               <p>Mumbai</p>
+               <p>1234567890</p>
+           </div>
+           <div class="time">
+               <p>MONDAY - THURSDAY <br>
+                10am - 1am</p>
+                <p>FRIDAY <br>
+                    10am - 2am</p>
+                <p>SATURDAY<br>
+                    9am - 2am</p>
+                <p>SUNDAY<br>
+                    9am - 1am</p>
+           </div>
+       </section>
+        <footer>
+            <p>2020 © Game Zone. All Rights Reserved</p>
+            <div class="socialmedia">
+                <a href=""><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                <a href=""><img src="https://img.icons8.com/color/48/000000/twitter.png"/></a>
+                <a href=""><img src="https://img.icons8.com/color/48/000000/facebook.png"/></a>
+                <a href=""><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"/></a>
+            </div>
+        </footer>
+            
     </div>
-    <script>
-      function search(keyword){
-        // hide all card-containers
-        keyword = keyword.toLowerCase();
-        cards = document.querySelectorAll('.card-container');
-        i = 0;
-        cards.forEach(card => {
-          if(document.querySelectorAll('.name')[i].innerHTML.toLowerCase().includes(keyword))
-          {
-            card.style.display = "block";
-          }
-          else{
-            card.style.display = "none";
-          }
-          i++;
-        });
-        // show only once matching the keyword
-      }
-
-      function add_to_cart(name, price){
-        let list = JSON.parse(localStorage.getItem('cart')) || [];
-        let val = {"name":name, "price":price}
-        // if()
-        flag = 0;
-        for(i = 0; i< list.length; i++)
-        {
-          if(list[i].name == name)
-          {
-            flag = 1;
-            break;
-          }
-        }
-        if(flag == 0)
-        {
-          // this will eliminate duplicate entry
-          list.push(val);
-        }
-        localStorage.setItem('cart', JSON.stringify(list));
-        console.log(JSON.parse(localStorage.getItem('cart')));
-      }
-    </script>
 </body>
 </html>

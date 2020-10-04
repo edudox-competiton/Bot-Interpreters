@@ -1,5 +1,6 @@
 *{
   z-index: 1;
+  font-family: 'Nunito', sans-serif;
 }
 body{
 	margin: 0px;
@@ -41,7 +42,7 @@ nav{
 	justify-content: space-between;
 	align-items: center;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 2px;
 	font-family: times new roman;
 	/* position: fixed;
@@ -49,7 +50,7 @@ nav{
 	left: 0; */
 	width: 100%;
 	box-sizing: border-box;
-	padding: 0px 2px 0px 2px;
+	padding: 0px 12px 0px 12px;
 	background-color: #050606;
 	box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
 	z-index:99;
@@ -186,6 +187,9 @@ nav{
     display: flex;
     align-items: center;
     /* padding-right: 2px; */
+  }
+  .name{
+	  font-weight: 700;
   }
   .btn-danger{
 	  background-color: transparent;
