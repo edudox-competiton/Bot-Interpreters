@@ -62,7 +62,7 @@
       left: 0; */
       width: 100vw;
       box-sizing: border-box;
-      padding: 0px 20px 0px 20px;
+      padding: 0px 20px 0px 0px;
       color: #eee;
       box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
       z-index:99;
