@@ -19,7 +19,7 @@ let products = getfromStorage();
 const getProductTotal = () => {
   let sum = 0;
   products.map((pdt) => {
-    sum = sum + pdt.price * pdt.quantity;
+    sum = sum + pdt.price ;
   });
 
   return sum;
@@ -28,13 +28,13 @@ const getProductTotal = () => {
 for (let i = 0; i < products.length; i++) {
   const row = document.createElement("tr");
 
-  const total = products[i].price * products[i].quantity;
+  const total = products[i].price;
 
   row.innerHTML = `
                  <tr>
                   <td>${products[i].name}</td>
                   <td>${products[i].price}</td>
-                  <td>${products[i].quantity}</td>
+                  <td> 1 </td>
                   <td>${total}</td>
                  </tr>
    `;
